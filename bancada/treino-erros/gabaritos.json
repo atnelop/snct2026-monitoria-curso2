@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "pasta": "variante-1",
+    "titulo": "Vírgula faltando entre dois locais",
+    "arquivo": "js/app.js",
+    "linha": 8,
+    "console": [
+      "Uncaught SyntaxError: Unexpected token '{'",
+      "Uncaught ReferenceError: filtrarEcopontos is not defined"
+    ]
+  },
+  {
+    "id": 2,
+    "pasta": "variante-2",
+    "titulo": "Chave } não fechada no último local",
+    "arquivo": "js/app.js",
+    "linha": 22,
+    "console": [
+      "Uncaught SyntaxError: Unexpected token ']'",
+      "Uncaught ReferenceError: filtrarEcopontos is not defined"
+    ]
+  },
+  {
+    "id": 3,
+    "pasta": "variante-3",
+    "titulo": "Aspas não fechadas",
+    "arquivo": "js/app.js",
+    "linha": 4,
+    "console": [
+      "Uncaught SyntaxError: Invalid or unexpected token",
+      "Uncaught ReferenceError: filtrarEcopontos is not defined"
+    ]
+  },
+  {
+    "id": 4,
+    "pasta": "variante-4",
+    "titulo": "Categoria escrita diferente do botão (\"Óleo\" x \"Oleo\")",
+    "arquivo": "js/app.js",
+    "linha": 19,
+    "console": []
+  },
+  {
+    "id": 5,
+    "pasta": "variante-5",
+    "titulo": "Caminho errado no <script src>",
+    "arquivo": "index.html",
+    "linha": 30,
+    "console": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Uncaught ReferenceError: filtrarEcopontos is not defined"
+    ]
+  },
+  {
+    "id": 6,
+    "pasta": "variante-6",
+    "titulo": "Nome da função errado no onclick",
+    "arquivo": "index.html",
+    "linha": 23,
+    "console": [
+      "Uncaught ReferenceError: filtrarEcoponto is not defined"
+    ]
+  },
+  {
+    "id": 7,
+    "pasta": "variante-7",
+    "titulo": "Vírgula sobrando depois do último local (não é erro)",
+    "arquivo": "js/app.js",
+    "linha": 22,
+    "console": []
+  },
+  {
+    "id": 8,
+    "pasta": "variante-8",
+    "titulo": "Endereço do mapa sem https://",
+    "arquivo": "js/app.js",
+    "linha": 14,
+    "console": []
+  }
+]

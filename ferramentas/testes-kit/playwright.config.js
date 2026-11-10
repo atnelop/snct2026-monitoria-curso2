@@ -1,6 +1,6 @@
 // Configuracao da auditoria do Starter Kit (Fase 1 do PLANO.md).
 //
-// Dois projetos rodam a mesma suite:
+// Dois projetos rodam a mesma suite (um terceiro, 'treino', confere a Fase 4):
 //   offline -> abre o kit por file://, com a rede desligada
 //   online  -> abre o deploy do GitHub Pages
 //
@@ -30,6 +30,7 @@ module.exports = defineConfig({
   projects: [
     {
       name: 'offline',
+      testIgnore: /treino\.spec\.js/,
       use: {
         modo: 'offline',
         enderecoKit: pathToFileURL(path.join(KIT_DIR, 'index.html')).href,
@@ -38,8 +39,10 @@ module.exports = defineConfig({
     },
     {
       name: 'online',
-      testIgnore: /pdf\.spec\.js/,
+      testIgnore: /(pdf|treino)\.spec\.js/,
       use: { modo: 'online', enderecoKit: KIT_URL, pastaKit: KIT_DIR, proxy },
     },
+    // Fase 4: variantes de treino dos monitores (bancada/treino-erros)
+    { name: 'treino', testMatch: /treino\.spec\.js/ },
   ],
 });

@@ -7,6 +7,7 @@
     "test": "playwright test",
     "test:offline": "playwright test --project=offline",
     "test:online": "playwright test --project=online",
+    "test:treino": "playwright test --project=treino",
     "comparar-pdf": "node comparar-pdf.js"
   },
   "devDependencies": {

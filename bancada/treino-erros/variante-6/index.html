@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Verde Garopaba — Coleta Seletiva & Ecopontos</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <main class="painel-container">
+        <!-- BLOCO 1: Personalize o titulo e o subtitulo ambiental da sua comunidade -->
+        <header class="topo-painel">
+            <span class="selo-ambiental">SNCT 2026 · Garopaba Sustentavel</span>
+            <h1>Onde Descartar em Garopaba?</h1>
+            <p>Selecione o tipo de residuo abaixo para filtrar os ecopontos e locais de coleta:</p>
+        </header>
+        <!-- BLOCO 1B: Botoes de filtro por categoria de residuo -->
+        <nav class="barra-filtros" aria-label="Filtro por tipo de residuo">
+            <button class="btn-filtro" onclick="filtrarEcopontos('Todos')">Todos</button>
+            <button class="btn-filtro" onclick="filtrarEcopontos('Reciclaveis')">Reciclaveis</button>
+            <button class="btn-filtro" onclick="filtrarEcoponto('Vidro')">Vidro</button>
+            <button class="btn-filtro" onclick="filtrarEcopontos('Eletronicos')">Eletronicos</button>
+            <button class="btn-filtro" onclick="filtrarEcopontos('Oleo')">Oleo de Cozinha</button>
+        </nav>
+        <!-- BLOCO 2: Grade onde o JavaScript desenha os cartoes automaticamente -->
+        <section id="gradeEcopontos" class="grade-ecopontos" aria-live="polite"></section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
