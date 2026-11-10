@@ -1,0 +1,5 @@
+vendor/
+dados/
+saida/
+node_modules/
+__pycache__/
