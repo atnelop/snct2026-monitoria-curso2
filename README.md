@@ -42,6 +42,15 @@ npx playwright test
 Hoje a suíte aponta 3 problemas do kit, todos descritos em
 `relatorios/auditoria-kit.md`.
 
+## Plano B (pen-drive)
+
+```bash
+bash ferramentas/montar-plano-b.sh
+```
+
+Copie o conteúdo de `saida/PLANO-B/` para o pen-drive e, a partir dele, rode
+`bash verificar-plano-b.sh`. Detalhes em `relatorios/plano-b.md`.
+
 ## Regras
 
 1. Tudo que vai para a bancada ou pen-drive é HTML, CSS e JS puros, sem
@@ -54,7 +63,7 @@ Hoje a suíte aponta 3 problemas do kit, todos descritos em
 
 - [x] Fase 0: Setup
 - [x] Fase 1: Auditoria automatizada do Starter Kit ([relatório](relatorios/auditoria-kit.md), [issues rascunhadas](relatorios/issues-frente2.md))
-- [ ] Fase 2: Plano B Offline
+- [ ] Fase 2: Plano B Offline: scripts prontos ([relatório](relatorios/plano-b.md)); faltam materiais das Frentes 1 e 3, a triagem e o aceite manual no laboratório
 - [ ] Fase 3: Auditoria das máquinas do laboratório
 - [ ] Fase 4: Kit de treinamento de monitores
 - [ ] Fase 5: Impressos e QR Codes

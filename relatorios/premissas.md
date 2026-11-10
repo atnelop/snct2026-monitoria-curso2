@@ -25,8 +25,8 @@ pendência for resolvida.
 3. Com 21 a 30 bancadas e a proporção de 1 monitor para 4 a 5 participantes, a
    escala precisa prever de 5 a 7 monitores se a sala lotar. A lista de
    presença de 30 linhas cobre a capacidade máxima.
-4. Sem o micro-roteiro e os slides, a pasta `materiais/` do Plano B (Fase 2)
-   fica com marcador de pendência até os arquivos chegarem.
+4. Sem o micro-roteiro e os slides, o Plano B (Fase 2) sai sem a pasta
+   `materiais/` e com um arquivo `PENDENCIAS.txt` até os arquivos chegarem.
 
 ## Pendência: stack do Curso 2
 
