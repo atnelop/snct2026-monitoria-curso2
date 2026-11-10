@@ -7,7 +7,7 @@
 ## Situação
 
 O pacote é montado e verificado automaticamente, mas **ainda está incompleto**:
-faltam 3 itens que dependem de outras entregas. Enquanto faltarem, o pacote
+faltam 2 itens que dependem de outras frentes. Enquanto faltarem, o pacote
 leva um arquivo `PENDENCIAS.txt` e o verificador termina com "OK COM AVISOS".
 
 | Item do plano | Situação |
@@ -16,7 +16,7 @@ leva um arquivo `PENDENCIAS.txt` e o verificador termina com "OK COM AVISOS".
 | `starter-kit-painel-verde.zip` com a pasta na raiz | Pronto |
 | `materiais/` com micro-roteiro em PDF | **Pendente** (Frente 1) |
 | `materiais/` com slides offline | **Pendente** (Frente 3) |
-| `bancada/triagem.html` | **Pendente** (Fase 4) |
+| `bancada/triagem.html` | Pronto (Fase 4) |
 | `LEIA-ME.txt` com até 5 passos | Pronto |
 | `SHA256SUMS.txt` | Pronto |
 | `verificar-plano-b.sh` dentro do pacote | Pronto |

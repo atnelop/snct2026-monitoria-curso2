@@ -51,6 +51,16 @@ bash ferramentas/montar-plano-b.sh
 Copie o conteúdo de `saida/PLANO-B/` para o pen-drive e, a partir dele, rode
 `bash verificar-plano-b.sh`. Detalhes em `relatorios/plano-b.md`.
 
+## Treino dos monitores
+
+```bash
+node ferramentas/gerar-treino-erros.js
+python3 ferramentas/rodizio-ensaio.py Nome1 Nome2 Nome3
+```
+
+As variantes com gabarito ficam em `bancada/treino-erros/`; as cópias sem
+gabarito, para entregar no ensaio, em `saida/TREINO/`.
+
 ## Regras
 
 1. Tudo que vai para a bancada ou pen-drive é HTML, CSS e JS puros, sem
@@ -63,9 +73,9 @@ Copie o conteúdo de `saida/PLANO-B/` para o pen-drive e, a partir dele, rode
 
 - [x] Fase 0: Setup
 - [x] Fase 1: Auditoria automatizada do Starter Kit ([relatório](relatorios/auditoria-kit.md), [issues rascunhadas](relatorios/issues-frente2.md))
-- [ ] Fase 2: Plano B Offline: scripts prontos ([relatório](relatorios/plano-b.md)); faltam materiais das Frentes 1 e 3, a triagem e o aceite manual no laboratório
+- [ ] Fase 2: Plano B Offline: scripts prontos ([relatório](relatorios/plano-b.md)); faltam materiais das Frentes 1 e 3 e o aceite manual no laboratório
 - [ ] Fase 3: Auditoria das máquinas do laboratório
-- [ ] Fase 4: Kit de treinamento de monitores
+- [x] Fase 4: Kit de treinamento de monitores ([relatório](relatorios/treino-monitores.md))
 - [ ] Fase 5: Impressos e QR Codes
 - [ ] Fase 6: Pesquisa de satisfação
 - [ ] Fase 7: Consolidação de evidências (após 26/11)
