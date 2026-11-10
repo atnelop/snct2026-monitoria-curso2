@@ -30,6 +30,18 @@ git clone --depth 1 https://github.com/fleithpi/sntc2026-starter-kit-curso2 vend
 O repositório do Starter Kit pertence à Frente 2 e é somente leitura para esta
 equipe: problemas encontrados viram rascunho em `relatorios/issues-frente2.md`.
 
+## Testes do Starter Kit
+
+```bash
+cd ferramentas/testes-kit
+npm install
+npx playwright install chromium
+npx playwright test
+```
+
+Hoje a suíte aponta 3 problemas do kit, todos descritos em
+`relatorios/auditoria-kit.md`.
+
 ## Regras
 
 1. Tudo que vai para a bancada ou pen-drive é HTML, CSS e JS puros, sem
@@ -41,7 +53,7 @@ equipe: problemas encontrados viram rascunho em `relatorios/issues-frente2.md`.
 ## Andamento
 
 - [x] Fase 0: Setup
-- [ ] Fase 1: Auditoria automatizada do Starter Kit
+- [x] Fase 1: Auditoria automatizada do Starter Kit ([relatório](relatorios/auditoria-kit.md), [issues rascunhadas](relatorios/issues-frente2.md))
 - [ ] Fase 2: Plano B Offline
 - [ ] Fase 3: Auditoria das máquinas do laboratório
 - [ ] Fase 4: Kit de treinamento de monitores
