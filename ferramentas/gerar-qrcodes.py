@@ -4,11 +4,13 @@
 Uso:
     python3 ferramentas/gerar-qrcodes.py
     python3 ferramentas/gerar-qrcodes.py --pesquisa https://forms.gle/...
+    python3 ferramentas/gerar-qrcodes.py --pesquisa-moodle https://moodle.ifsc.edu.br/mod/feedback/view.php?id=...
 
 Le os enderecos de ferramentas/links.json e grava em saida/qr/:
     qr-moodle.svg / .png     sala Moodle do Curso 2
     qr-deploy.svg / .png     deploy do Starter Kit
-    qr-pesquisa.svg / .png   pesquisa de satisfacao (PNG vai para a Frente 3, Tela 8)
+    qr-pesquisa.svg / .png   Google Forms espelho (PNG vai para a Frente 3, Tela 8)
+    qr-pesquisa-moodle.*     atividade Pesquisa no Moodle (opcional)
 
 Correcao de erro nivel M. Depende da biblioteca segno (pip install segno).
 Os enderecos sao sempre copiados de links.json, nunca digitados: o repositorio
@@ -31,14 +33,20 @@ DESTINO = RAIZ / "saida" / "qr"
 
 def main():
     parser = argparse.ArgumentParser(description="Gera os QR Codes da oficina (SVG e PNG).")
-    parser.add_argument("--pesquisa", help="endereco da pesquisa de satisfacao; grava em links.json")
+    parser.add_argument("--pesquisa", help="endereco do Google Forms espelho; grava em links.json")
+    parser.add_argument("--pesquisa-moodle", help="endereco da atividade Pesquisa no Moodle; grava em links.json")
     args = parser.parse_args()
 
     links = json.loads(LINKS.read_text(encoding="utf-8"))
-    if args.pesquisa:
-        links["pesquisa"]["url"] = args.pesquisa
+    novos = {"pesquisa": args.pesquisa, "pesquisa-moodle": args.pesquisa_moodle}
+    for chave, url in novos.items():
+        if url:
+            if not url.startswith("https://"):
+                sys.exit(f"ERRO: o endereco precisa comecar com https:// ({url})")
+            links[chave]["url"] = url
+            print(f"links.json atualizado: {chave} = {url}")
+    if any(novos.values()):
         LINKS.write_text(json.dumps(links, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        print(f"links.json atualizado com a pesquisa: {args.pesquisa}")
 
     DESTINO.mkdir(parents=True, exist_ok=True)
     pendentes = []
@@ -59,7 +67,7 @@ def main():
 
     print(f"\nArquivos em: {DESTINO.relative_to(RAIZ)}/")
     if "pesquisa" in pendentes:
-        print("Falta o QR da pesquisa: rode de novo com --pesquisa <endereco do Forms> (Fase 6).")
+        print("Falta o QR da pesquisa: rode de novo com --pesquisa <endereco do Forms>.")
     else:
         print("Envie saida/qr/qr-pesquisa.png para a Frente 3 (Tela 8 dos slides).")
 
