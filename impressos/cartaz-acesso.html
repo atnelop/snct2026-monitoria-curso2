@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Cartaz de acesso · Curso 2 Painel Verde · SNCT 2026</title>
+<link rel="stylesheet" href="impressos.css">
+<style>
+  .cabecalho h1 { font-size: 26pt; }
+  .bloco { display: flex; gap: 8mm; align-items: center; border: 0.5mm solid #000; border-radius: 3mm;
+           padding: 4mm 5mm; margin-bottom: 5mm; }
+  .qr { flex: 0 0 62mm; width: 62mm; height: 62mm; display: flex; align-items: center; justify-content: center;
+        text-align: center; }
+  .qr img { width: 62mm; height: 62mm; display: block; }
+  .qr.faltando { border: 0.8mm dashed #b45309; color: #92400e; font-weight: 700; padding: 3mm; }
+  .texto h2 { font-size: 22pt; margin: 0 0 2mm; }
+  .texto p { margin-bottom: 2mm; }
+  .chave { font-size: 34pt; font-weight: 800; letter-spacing: 1.5pt; border: 1mm solid #15803d;
+           display: inline-block; padding: 1mm 5mm; border-radius: 2mm; }
+  .endereco { font-family: "Liberation Mono", "Courier New", monospace; font-size: 14pt; word-break: break-all; }
+  .passo { font-weight: 800; color: #15803d; }
+</style>
+</head>
+<body>
+  <div class="cabecalho">
+    <h1>Painel Verde · Como entrar</h1>
+    <p>SNCT 2026 · 26/11/2026<br>IFSC Câmpus Garopaba</p>
+  </div>
+  <p>Aponte a câmera do celular para o quadrado. No computador, use o endereço escrito ao lado.</p>
+
+  <div class="bloco">
+    <div class="qr" data-qr="moodle">QR da sala Moodle<br>(gerar com gerar-qrcodes.py)</div>
+    <div class="texto">
+      <h2><span class="passo">1.</span> Sala da oficina</h2>
+      <p>Tem o roteiro e o arquivo do projeto para baixar.</p>
+      <p>Se pedir uma chave de inscrição, digite:</p>
+      <p><span class="chave">SNCT2026</span></p>
+      <p class="endereco" data-url="moodle"></p>
+    </div>
+  </div>
+
+  <div class="bloco">
+    <div class="qr" data-qr="deploy">QR do site de exemplo<br>(gerar com gerar-qrcodes.py)</div>
+    <div class="texto">
+      <h2><span class="passo">2.</span> O site pronto</h2>
+      <p>Veja no celular como fica o Painel Verde que você vai personalizar hoje.</p>
+      <p class="endereco" data-url="deploy"></p>
+    </div>
+  </div>
+
+  <div class="bloco">
+    <div class="qr" data-qr="pesquisa">QR da pesquisa<br>[PENDENTE: aguarda o endereço do formulário]</div>
+    <div class="texto">
+      <h2><span class="passo">3.</span> No final: sua opinião</h2>
+      <p>São 3 perguntas rápidas. Leva menos de 1 minuto e ajuda a melhorar a próxima oficina.</p>
+      <p class="endereco" data-url="pesquisa"></p>
+    </div>
+  </div>
+</body>
+</html>
