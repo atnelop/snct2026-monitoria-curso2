@@ -61,6 +61,16 @@ python3 ferramentas/rodizio-ensaio.py Nome1 Nome2 Nome3
 As variantes com gabarito ficam em `bancada/treino-erros/`; as cópias sem
 gabarito, para entregar no ensaio, em `saida/TREINO/`.
 
+## Impressos e QR Codes
+
+```bash
+pip install -r ferramentas/requirements.txt
+python3 ferramentas/gerar-qrcodes.py
+node ferramentas/gerar-impressos.js
+```
+
+Os PDFs saem em `saida/impressos/` e os QR Codes em `saida/qr/`.
+
 ## Regras
 
 1. Tudo que vai para a bancada ou pen-drive é HTML, CSS e JS puros, sem
@@ -76,6 +86,6 @@ gabarito, para entregar no ensaio, em `saida/TREINO/`.
 - [ ] Fase 2: Plano B Offline: scripts prontos ([relatório](relatorios/plano-b.md)); faltam materiais das Frentes 1 e 3 e o aceite manual no laboratório
 - [ ] Fase 3: Auditoria das máquinas do laboratório
 - [x] Fase 4: Kit de treinamento de monitores ([relatório](relatorios/treino-monitores.md))
-- [ ] Fase 5: Impressos e QR Codes
+- [ ] Fase 5: Impressos e QR Codes: gerados ([relatório](relatorios/impressos.md)); faltam o modelo oficial dos termos, o QR da pesquisa, o mapa real das bancadas e o teste dos QR em 2 celulares
 - [ ] Fase 6: Pesquisa de satisfação
 - [ ] Fase 7: Consolidação de evidências (após 26/11)
