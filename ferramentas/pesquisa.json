@@ -1,0 +1,33 @@
+{
+  "titulo": "Pesquisa de Satisfação · Painel Verde · SNCT 2026",
+  "descricao": "São 3 perguntas rápidas sobre a oficina de hoje. Não pedimos nome nem e-mail.",
+  "agradecimento": "Obrigado! Sua resposta foi registrada.",
+  "perguntas": [
+    {
+      "id": "P1",
+      "tipo": "escala",
+      "obrigatoria": true,
+      "texto": "De 1 a 5, o quanto o Micro-Roteiro e a explicação ajudaram você a colocar seu projeto no ar?",
+      "minimo": 1,
+      "maximo": 5,
+      "rotuloMaximo": "Excelente"
+    },
+    {
+      "id": "P2",
+      "tipo": "multipla",
+      "obrigatoria": true,
+      "texto": "Você conseguiu abrir o projeto publicado no seu smartphone via QR Code?",
+      "opcoes": [
+        "Sim, abriu perfeitamente no celular!",
+        "Abriu no computador do laboratório, mas não testei no celular.",
+        "Tive dificuldade na etapa do GitHub Pages."
+      ]
+    },
+    {
+      "id": "P3",
+      "tipo": "curta",
+      "obrigatoria": false,
+      "texto": "O que você mais gostou na oficina de hoje e que tema gostaria de ver na próxima edição?"
+    }
+  ]
+}
