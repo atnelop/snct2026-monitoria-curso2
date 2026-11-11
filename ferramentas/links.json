@@ -1,0 +1,14 @@
+{
+  "moodle": {
+    "titulo": "Sala da oficina no Moodle",
+    "url": "https://moodle.ifsc.edu.br/course/view.php?id=2664"
+  },
+  "deploy": {
+    "titulo": "Painel Verde no ar (exemplo)",
+    "url": "https://fleithpi.github.io/sntc2026-starter-kit-curso2/"
+  },
+  "pesquisa": {
+    "titulo": "Pesquisa de satisfação",
+    "url": null
+  }
+}

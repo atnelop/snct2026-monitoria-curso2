@@ -1,0 +1,2 @@
+# Ferramentas internas em Python (nada disto vai para a bancada)
+segno>=1.6        # gerar-qrcodes.py
