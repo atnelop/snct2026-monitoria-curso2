@@ -87,5 +87,5 @@ Os PDFs saem em `saida/impressos/` e os QR Codes em `saida/qr/`.
 - [ ] Fase 3: Auditoria das máquinas do laboratório
 - [x] Fase 4: Kit de treinamento de monitores ([relatório](relatorios/treino-monitores.md))
 - [ ] Fase 5: Impressos e QR Codes: gerados ([relatório](relatorios/impressos.md)); faltam o modelo oficial dos termos, o QR da pesquisa, o mapa real das bancadas e o teste dos QR em 2 celulares
-- [ ] Fase 6: Pesquisa de satisfação
+- [ ] Fase 6: Pesquisa de satisfação: [checklist do Moodle](relatorios/checklist-moodle.md) e `ferramentas/forms-espelho.gs` prontos; falta executar na sala e no Google, testar e enviar o QR à Frente 3
 - [ ] Fase 7: Consolidação de evidências (após 26/11)

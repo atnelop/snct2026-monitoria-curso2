@@ -46,7 +46,7 @@ máquina e classificação. O gerador lê a primeira tabela que tenha uma coluna
 | --- | --- | --- |
 | `qr-moodle` | `https://moodle.ifsc.edu.br/course/view.php?id=2664` | Gerado |
 | `qr-deploy` | `https://fleithpi.github.io/sntc2026-starter-kit-curso2/` | Gerado |
-| `qr-pesquisa` | (sem endereço) | **Pendente** (Fase 6) |
+| `qr-pesquisa` | (sem endereço) | **Pendente**: aguarda o Forms espelho ser criado (ver [checklist-moodle.md](checklist-moodle.md)) |
 
 Gerados com `segno`, sem internet, em SVG e PNG, com correção de erro nível M.
 Os endereços ficam em `ferramentas/links.json` e nunca são digitados à mão (o
